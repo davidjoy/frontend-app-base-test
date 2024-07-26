@@ -1,4 +1,9 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
-const { createConfig } = require('@openedx/frontend-build');
+const path = require('path');
 
-module.exports = createConfig('eslint');
+const { createConfig } = require('@openedx/frontend-base/config');
+
+module.exports = createConfig('eslint', {
+  parserOptions: {
+    project: path.resolve(__dirname, './tsconfig.json'),
+  },
+});
