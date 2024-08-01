@@ -5,8 +5,8 @@ const ModuleOne = () => (
   <main>
     <Container className="py-5">
       <h1>Module One</h1>
-      <p>Hello world one!</p>
-      {getConfig().SITE_NAME}
+      <p>Hello {getConfig().SITE_NAME}!</p>
+
     </Container>
   </main>
 );
