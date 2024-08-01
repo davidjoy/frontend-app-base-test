@@ -17,3 +17,8 @@ temp/babel-plugin-react-intl
 *~
 /temp
 /.vscode
+
+env.config.tsx
+env.config.jsx
+env.config.js
+env.config.ts
