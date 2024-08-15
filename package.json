@@ -1,7 +1,7 @@
 {
-  "name": "@edx/frontend-app-base-test",
+  "name": "@openedx/frontend-app-base-test",
   "version": "0.1.0",
-  "description": "Frontend application template",
+  "description": "A test application for frontend-base.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/openedx/frontend-app-base-test.git"
