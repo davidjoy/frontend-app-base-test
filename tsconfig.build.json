@@ -1,0 +1,15 @@
+{
+  "extends": "@openedx/frontend-base/config/tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "noEmit": false,
+  },
+  "include": [
+    "src/**/*",
+  ],
+  "exclude": [
+    "src/__mocks__",
+    "src/setupTest.js",
+  ]
+}
