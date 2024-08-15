@@ -6,6 +6,20 @@
     "type": "git",
     "url": "git+https://github.com/openedx/frontend-app-base-test.git"
   },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist",
+    "/scss/**/*.scss"
+  ],
+  "config": {
+    "name": "baseTest"
+  },
+  "exports": {
+    "./ModuleOne": "./src/ModuleOne",
+    "./ModuleTwo": "./src/ModuleTwo"
+  },
   "browserslist": [
     "extends @edx/browserslist-config"
   ],
