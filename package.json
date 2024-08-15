@@ -24,16 +24,17 @@
     "extends @edx/browserslist-config"
   ],
   "scripts": {
-    "dev:shell": "PORT=8082 openedx shell-dev-server",
-    "build": "openedx webpack",
+    "build:module": "openedx build:module",
+    "dev": "PORT=8082 openedx dev",
+    "dev:module": "PORT=8082 openedx dev:module",
     "i18n_extract": "openedx formatjs extract",
-    "lint": "openedx eslint .",
-    "lint:fix": "openedx eslint --fix .",
-    "snapshot": "openedx jest --updateSnapshot",
-    "start": "openedx webpack-dev-server --progress",
-    "start:with-theme": "paragon install-theme && npm start && npm install",
-    "test": "openedx jest --coverage --passWithNoTests --no-cache",
-    "serve": "openedx serve"
+    "lint": "openedx lint .",
+    "lint:fix": "openedx lint --fix .",
+    "pack": "openedx pack",
+    "release": "openedx release",
+    "serve": "openedx serve",
+    "snapshot": "openedx test --updateSnapshot",
+    "test": "openedx test --coverage --passWithNoTests --no-cache"
   },
   "husky": {
     "hooks": {
