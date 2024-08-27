@@ -25,7 +25,7 @@
     "extends @edx/browserslist-config"
   ],
   "scripts": {
-    "build:module": "openedx build:module",
+    "build:module": "PORT=8082 openedx build:module",
     "dev": "PORT=8082 openedx dev",
     "dev:module": "PORT=8082 openedx dev:module",
     "i18n_extract": "openedx formatjs extract",
@@ -33,7 +33,7 @@
     "lint:fix": "openedx lint --fix .",
     "pack": "openedx pack",
     "release": "openedx release",
-    "serve": "openedx serve",
+    "serve": "PORT=8082 openedx serve",
     "snapshot": "openedx test --updateSnapshot",
     "test": "openedx test --coverage --passWithNoTests --no-cache"
   },
