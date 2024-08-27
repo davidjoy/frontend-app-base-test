@@ -14,11 +14,12 @@
     "/scss/**/*.scss"
   ],
   "config": {
-    "name": "baseTest"
-  },
-  "exports": {
-    "./ModuleOne": "./src/ModuleOne",
-    "./ModuleTwo": "./src/ModuleTwo"
+    "name": "baseTest",
+    "exposes": {
+      "./ModuleOne": "./src/ModuleOne",
+      "./ModuleTwo": "./src/ModuleTwo",
+      "./ModuleThree": "./src/ModuleThree"
+    }
   },
   "browserslist": [
     "extends @edx/browserslist-config"
