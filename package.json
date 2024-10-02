@@ -10,21 +10,21 @@
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "/dist",
-    "/scss/**/*.scss"
+    "/dist"
   ],
   "config": {
     "name": "baseTest",
     "exposes": {
-      "./ModuleOne": "./src/ModuleOne",
-      "./ModuleTwo": "./src/ModuleTwo",
-      "./ModuleThree": "./src/ModuleThree"
+      "./ModuleOne": "./src/module-one",
+      "./ModuleTwo": "./src/module-two",
+      "./ModuleThree": "./src/module-three"
     }
   },
   "browserslist": [
     "extends @edx/browserslist-config"
   ],
   "scripts": {
+    "temp:pack-it": "npm run pack frontend-project-test && npm run pack frontend-project-module-test",
     "build:module": "PORT=8082 openedx build:module",
     "dev": "PORT=8082 openedx dev",
     "dev:module": "PORT=8082 openedx dev:module",

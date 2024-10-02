@@ -1,6 +1,7 @@
-import { SiteConfig } from '@openedx/frontend-base';
+import { EnvironmentTypes, ProjectSiteConfig } from '@openedx/frontend-base';
 
-const config: SiteConfig = {
+const config: ProjectSiteConfig = {
+  apps: [],
   ACCESS_TOKEN_COOKIE_NAME: 'edx-jwt-cookie-header-payload',
   BASE_URL: 'http://localhost:8080',
   ACCOUNT_PROFILE_URL: 'http://localhost:1995',
@@ -17,12 +18,12 @@ const config: SiteConfig = {
   FAVICON_URL: 'https://edx-cdn.org/v3/default/favicon.ico',
   MARKETING_SITE_BASE_URL: 'http://localhost:18000',
   ORDER_HISTORY_URL: 'http://localhost:1996/orders',
-  REFRESH_ACCESS_TOKEN_ENDPOINT: 'http://localhost:18000/login_refresh',
+  REFRESH_ACCESS_TOKEN_API_PATH: '/login_refresh',
   SEGMENT_KEY: '',
   SITE_NAME: 'localhost',
   USER_INFO_COOKIE_NAME: 'edx-user-info',
   APP_ID: 'base-test',
-  ENVIRONMENT: 'dev',
+  ENVIRONMENT: EnvironmentTypes.TEST,
   ACCOUNT_SETTINGS_URL: 'http://localhost:1997',
   DISCOVERY_API_BASE_URL: 'http://localhost:18381',
   IGNORED_ERROR_REGEX: null,
